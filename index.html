@@ -4,24 +4,122 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>JEMHD Group, LLC</title>
+<meta name="description" content="JEMHD Group, LLC — parent company of Jemvala Care and SecondCall AI.">
 <style>
-  body { font-family: Georgia, 'Times New Roman', serif; margin: 0; background: #f7f5f0; color: #1c1c1c; }
-  main { max-width: 640px; margin: 12vh auto; padding: 48px 40px; background: #ffffff; border: 1px solid #e3ded2; }
-  h1 { font-size: 34px; margin: 0 0 8px; letter-spacing: 0.5px; }
-  p.tagline { font-size: 18px; color: #444; margin: 0 0 32px; }
-  p.contact { font-size: 16px; line-height: 1.7; color: #222; margin: 0; }
-  a { color: #0f5f5c; }
+  :root{
+    --ink:#0c1210; --panel:#111a17; --panel2:#16211d; --line:#24352e;
+    --teal:#2dd4bf; --text:#eef4f1; --muted:#9db4aa; --gold:#d8b36a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ink);color:var(--text);
+    font-family:"Avenir Next","Segoe UI",system-ui,-apple-system,Arial,sans-serif;}
+  a{color:var(--teal);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+  header{border-bottom:1px solid var(--line);background:rgba(12,18,16,.9)}
+  .bar{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+  .mark{display:flex;align-items:center;gap:14px}
+  .badge{width:44px;height:44px;border:1.5px solid var(--teal);border-radius:10px;
+    display:flex;align-items:center;justify-content:center;
+    font-family:Georgia,serif;font-size:19px;color:var(--teal);letter-spacing:1px}
+  .name{font-size:19px;letter-spacing:3px;font-weight:600}
+  .name small{display:block;font-size:10.5px;letter-spacing:2.4px;color:var(--muted);font-weight:400;margin-top:3px}
+  .bar .hq{font-size:12px;letter-spacing:2px;color:var(--muted)}
+  .hero{padding:84px 0 64px;background:
+    radial-gradient(720px 340px at 85% -60px, rgba(45,212,191,.14), transparent 60%),
+    radial-gradient(560px 300px at 0% 0%, rgba(216,179,106,.07), transparent 55%)}
+  .eyebrow{color:var(--teal);letter-spacing:3.5px;font-size:12px;font-weight:600;margin:0 0 18px}
+  h1{font-family:Georgia,"Times New Roman",serif;font-weight:500;
+    font-size:clamp(38px,5.6vw,58px);line-height:1.12;margin:0 0 20px;max-width:15ch}
+  h1 em{font-style:italic;color:var(--teal)}
+  .lede{font-size:18px;line-height:1.65;color:var(--muted);max-width:56ch;margin:0}
+  .rule{height:1px;background:linear-gradient(90deg,var(--teal),transparent);margin:52px 0 0;opacity:.5}
+  .brands{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:56px 0}
+  @media (max-width:760px){.brands{grid-template-columns:1fr}}
+  .card{background:linear-gradient(180deg,var(--panel2),var(--panel));
+    border:1px solid var(--line);border-radius:16px;padding:34px 32px}
+  .card .k{font-size:11px;letter-spacing:3px;color:var(--gold);margin:0 0 12px;font-weight:600}
+  .card h2{font-family:Georgia,serif;font-weight:500;font-size:27px;margin:0 0 12px}
+  .card p{color:var(--muted);line-height:1.65;font-size:15.5px;margin:0 0 18px}
+  .card .go{font-size:14px;letter-spacing:.4px}
+  .about{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    background:var(--panel);padding:44px 0}
+  .about .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:36px}
+  @media (max-width:760px){.about .grid{grid-template-columns:1fr}}
+  .about h3{font-size:12px;letter-spacing:3px;color:var(--teal);margin:0 0 14px}
+  .about p{color:var(--muted);line-height:1.7;margin:0;font-size:15.5px}
+  .facts{list-style:none;margin:0;padding:0}
+  .facts li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--text)}
+  .facts li span{display:block;font-size:11px;letter-spacing:2.2px;color:var(--muted);margin-bottom:4px}
+  footer{padding:38px 0 46px;color:var(--muted);font-size:13.5px}
+  footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 </style>
 </head>
 <body>
-<main>
-  <h1>JEMHD Group, LLC</h1>
-  <p class="tagline">Parent company of Jemvala Care and SecondCall AI.</p>
-  <p class="contact">
-    558 E 96th St, Brooklyn, NY 11212<br>
-    (302) 556-7717<br>
-    <a href="mailto:admin@jemhdgroup.com">admin@jemhdgroup.com</a>
-  </p>
-</main>
+<header>
+  <div class="wrap bar">
+    <div class="mark">
+      <div class="badge">JG</div>
+      <div class="name">JEMHD GROUP, LLC<small>PARENT COMPANY</small></div>
+    </div>
+    <div class="hq">BROOKLYN, NEW YORK</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">HOLDING &amp; OPERATING COMPANY</p>
+    <h1>One group. Two brands, <em>built to serve.</em></h1>
+    <p class="lede">JEMHD Group, LLC is the parent company of Jemvala Care and SecondCall AI —
+      software businesses built on a simple standard: answer every call, keep every family
+      in the loop, and prove the work after every interaction.</p>
+    <div class="rule"></div>
+  </div>
+</section>
+
+<section class="wrap brands">
+  <div class="card">
+    <p class="k">FAMILY CARE TECHNOLOGY</p>
+    <h2>Jemvala Care</h2>
+    <p>One shared daily log for families caring for an elderly parent — care checklists,
+      medication logging with a family photo check, appointments, handover notes, and an
+      evening digest written from the family&rsquo;s own record. One flat price per family.</p>
+  </div>
+  <div class="card">
+    <p class="k">AI FRONT DESK</p>
+    <h2>SecondCall AI</h2>
+    <p>The front desk for local business. Debbie, SecondCall&rsquo;s AI receptionist, answers
+      every call around the clock, books the job, and sends proof after every call — so a
+      missed call never becomes a missed customer.</p>
+    <p class="go"><a href="https://secondcallaii.com">secondcallaii.com &rarr;</a></p>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap grid">
+    <div>
+      <h3>ABOUT THE COMPANY</h3>
+      <p>JEMHD Group, LLC is a Wyoming limited liability company operating from Brooklyn,
+        New York. The group builds and operates software brands in family care and local
+        business services, holding each brand to the same operating discipline: clear
+        records, honest claims, and service that can be verified.</p>
+    </div>
+    <div>
+      <h3>COMPANY RECORD</h3>
+      <ul class="facts">
+        <li><span>LEGAL NAME</span>JEMHD Group, LLC</li>
+        <li><span>FORMED</span>Wyoming, 2026</li>
+        <li><span>OFFICE</span>558 E 96th St, Brooklyn, NY 11212</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap row">
+    <div>&copy; 2026 JEMHD Group, LLC. All rights reserved.</div>
+    <div>(302) 556-7717 &nbsp;&middot;&nbsp; <a href="mailto:admin@jemhdgroup.com">admin@jemhdgroup.com</a></div>
+  </div>
+</footer>
 </body>
 </html>
